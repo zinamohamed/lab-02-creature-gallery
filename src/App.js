@@ -1,18 +1,37 @@
 import React from 'react';
 import './App.css';
-import Header from './My Components/header.js'
-import ImageList from './My Components/ImageList.js'
-import images from './data.js'
+import Header from './My Components/header.js';
+import ImageList from './My Components/ImageList.js';
+import images from './data.js';
 
-function App() {
-  return (
+
+export default class App extends React.Component {
+  // initalize state //
+  state = {
+    keyword: '',
+  }
+  
+  render () {
+    const filteredList = images.filter((ImageList) => {
+      // if the user does not select a specific keyword, show all //
+      
+      // if (!this.state.keyword) return true;
+      // if the user selects a specific keyword, show image with the same keyword //
+      
+      if (ImageList.keyword === this.state.keyword)return true;
+      
+      return false;
+    });
+  
+    return (
     <div className="App">
       <Header/>
-      <div class="dropdown">
-        
-        <label for="creatures">Pick An Animal:</label>
-
-        <select name="creatures" id="creatures">
+      <div className="dropdown">
+          Pick a magical creature:
+        <form className="form">
+  
+        <select value={this.state.keyword} onChange={(e)=> {this.setState({keyword: e.target.value})}} name="creatures" id="creatures">
+          
           <option value="narwhal">Narwhal</option>
           <option value="rhino">Rhino</option>
           <option value="unicorn">Unicorn</option>
@@ -24,13 +43,14 @@ function App() {
           <option value="lizard">Lizard</option>
           <option value="dragon">Dragon</option>
         </select>
-          <button>Submit!</button>
+        </form>
       
       </div>
-      
-      <ImageList ImageItemProp= { images }/>
+      <div className="image-gallery">
+        <ImageList filteredList= {filteredList}/>
+      </div>
     </div>
   );
 }
 
-export default App;
+}

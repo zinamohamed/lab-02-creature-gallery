@@ -4,10 +4,11 @@ import ImageItem from './ImageItem';
 
 class ImageList extends React.Component {
     render() {
-    const animalImages = 
-      this.props.ImageItemProp.map(
-        currentAnimalImage => <ImageItem ImageItemProp = { currentAnimalImage } />
-      );
+      
+      const animalImages = this.props.filteredList.map(
+          creatureImage => <ImageItem 
+          key={creatureImage.title} 
+          ImageItemProp= {creatureImage} />)
 
     return (
       <ul class="animal-list">
