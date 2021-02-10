@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.animal-img {
+  width: 500px;
+  height: auto;
+}
+
+.animal-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
