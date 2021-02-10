@@ -2,22 +2,35 @@
 
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 
 .animal-img {
-  width: 500px;
-  height: auto;
+  width: 500px; 
+  height: 500px;
 }
 
 .animal-list {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   padding: 10px;
+  margin: 10px;
+  flex-wrap: wrap;
+
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
 }
 
 
@@ -29,11 +42,13 @@
   text-align: center;
   padding: 10px;
   margin: 10px;
+
 }
 
 .form {
-  padding: 5px;
-  margin: 5px;
+  padding: 10px;
+
+  
 }
 
 select {
@@ -47,7 +62,32 @@ select {
   font-size: 1.25rem;
   cursor: pointer;
   line-height: 1.1;
-  background-color: #fff;
-  background-image: linear-gradient(to top, #a8dadc, #fff 33%);
+  border: white 5px solid;
+  color: #fff;
+  background-image: linear-gradient(to top, #ffc6ff, #ffd6a5);
+
+}
+
+h1 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#ffc6ff, #ffd6a5, #9bf6ff, #fdffb6, #ffadad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 24px;
+  background: -webkit-linear-gradient(#ffc6ff, #ffd6a5, #9bf6ff, #fdffb6, #ffadad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  color: #293241;
+  font-size: 20px;
+}
+
+span {
+  color: #9bf6ff;
 }
 

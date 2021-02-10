@@ -5,7 +5,7 @@ import ImageItem from './ImageItem';
 class ImageList extends React.Component {
     render() {
       
-      const animalImages = this.props.filteredList.map(
+      const animalImages = this.props.filteredAnimals.map(
           creatureImage => <ImageItem 
           key={creatureImage.title} 
           ImageItemProp= {creatureImage} />)

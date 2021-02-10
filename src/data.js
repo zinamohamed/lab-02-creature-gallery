@@ -56,11 +56,10 @@ const images = [
     horns: 2
   },
   {
-    url:
-      "https://vignette.wikia.nocookie.net/landbeforetime/images/c/c3/Cera_infobox.png/revision/latest?cb=20180422005003",
+    url:"https://am23.mediaite.com/tms/cnt/uploads/2010/08/cera-550x419.jpg",
     title: "Cera",
     description:
-      "Three horns but still, horns. And who doesn't like The Land Before Time?",
+      "Who doesn't like The Land Before Time?",
     keyword: "triceratops",
     horns: 3
   },
@@ -88,11 +87,10 @@ const images = [
     horns: 1
   },
   {
-    url:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Markhor_Schraubenziege_Capra_falconeri_Zoo_Augsburg-02.jpg/220px-Markhor_Schraubenziege_Capra_falconeri_Zoo_Augsburg-02.jpg",
+    url:"https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Markhor_Schraubenziege_Capra_falconeri_Zoo_Augsburg-02.jpg/220px-Markhor_Schraubenziege_Capra_falconeri_Zoo_Augsburg-02.jpg",
     title: "Markhor",
     description:
-      "These wild goats eat snakes, then secrete a foam that locals fight over for the antivenom properties -- how cool is that?",
+      "These wild goats eat snakes.",
     keyword: "markhor",
     horns: 2
   },
@@ -104,8 +102,7 @@ const images = [
     horns: 2
   },
   {
-    url:
-      "https://www.telegraph.co.uk/content/dam/news/2018/08/31/TELEMMGLPICT000172876166_trans_NvBQzQNjv4BqVMkwVJHjp362E_QOuThcJYn-nah5azaj604iw29gEPg.jpeg",
+    url:"https://www.telegraph.co.uk/content/dam/news/2018/08/31/TELEMMGLPICT000172876166_trans_NvBQzQNjv4BqVMkwVJHjp362E_QOuThcJYn-nah5azaj604iw29gEPg.jpeg",
     title: "Mouflon",
     description: "Those horns though",
     keyword: "mouflon",
@@ -115,7 +112,7 @@ const images = [
     url: "https://lh3.googleusercontent.com/proxy/aU_kBxvDciSJqcQAq9GXyWGeSnf8bGNDlE7OL0L54EyWLl4ZhuSpX9ryMJuYlZqTWQJlzmcrgi6tX4LI-xCtfmosRUOZY2h_L_XB",
     title: "Addax",
     description:
-      "This guy is basically extinct but survives well in captivity, so they're frequently found in zoos",
+      "This guy is basically extinct but survives well in captivity.",
     keyword: "addax",
     horns: 2
   },

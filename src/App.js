@@ -12,10 +12,10 @@ export default class App extends React.Component {
   }
   
   render () {
-    const filteredList = images.filter((ImageList) => {
+    const filteredAnimals = images.filter((ImageList) => {
       // if the user does not select a specific keyword, show all //
       
-      // if (!this.state.keyword) return true;
+       if (!this.state.keyword) return true;
       // if the user selects a specific keyword, show image with the same keyword //
       
       if (ImageList.keyword === this.state.keyword)return true;
@@ -27,11 +27,12 @@ export default class App extends React.Component {
     <div className="App">
       <Header/>
       <div className="dropdown">
-          Pick a magical creature:
+          <p>Sort By Creature:</p>
         <form className="form">
   
         <select value={this.state.keyword} onChange={(e)=> {this.setState({keyword: e.target.value})}} name="creatures" id="creatures">
           
+          <option value="select">Select</option>
           <option value="narwhal">Narwhal</option>
           <option value="rhino">Rhino</option>
           <option value="unicorn">Unicorn</option>
@@ -47,7 +48,7 @@ export default class App extends React.Component {
       
       </div>
       <div className="image-gallery">
-        <ImageList filteredList= {filteredList}/>
+        <ImageList filteredAnimals= {filteredAnimals}/>
       </div>
     </div>
   );
